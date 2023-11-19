@@ -1,7 +1,7 @@
 import { Text, Flex, Stat, StatLabel, StatNumber } from "@chakra-ui/react"
 
 type StatsLengthProps = {
-  length: string
+  length: number
 }
 
 export const StatLength = ({ length }: StatsLengthProps) => {
