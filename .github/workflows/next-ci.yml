@@ -14,10 +14,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: cd
-          run: cd app
+        run: cd app
       - name: Install dependencies
-          run: yarn install
+        run: yarn install
       - name: lint-check
-          run: yarn run lint
+        run: yarn run lint
       - name: prettier-check
-          run: yarn run format
+        run: yarn run format
