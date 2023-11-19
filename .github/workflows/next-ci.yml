@@ -14,6 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Install dependencies
+        working-directory: ./app
         run: yarn install
       - name: lint-check
         working-directory: ./app
