@@ -3,7 +3,6 @@
   "scripts": {
     "dev": "next dev",
     "start": "next start",
-    // "build": "next build && next export",
     "check:eslint": "next lint",
     "eslint": "next lint --fix",
     "check:prettier": "prettier --check './**/*.{js,jsx,ts,tsx,json}'",
