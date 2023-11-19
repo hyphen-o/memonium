@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "next dev",
     "lint": "next lint",
-    "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json}'"
+    "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json}'",
+    "check": "yarn check:eslint && yarn check:prettier"
   },
   "packageManager": "yarn@4.0.2",
   "dependencies": {
