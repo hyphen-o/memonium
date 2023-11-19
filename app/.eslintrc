@@ -1,0 +1,12 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 12,
+      "project": "./tsconfig.json",
+      "sourceType": "module"
+    },
+    "extends": ["next/core-web-vitals", "eslint:recommended", "prettier"]
+}
