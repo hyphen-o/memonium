@@ -1,6 +1,12 @@
 import { AppProps } from "next/app"
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+import { ChakraProvider } from "@chakra-ui/react"
+
+const Memonium = ({ Component, pageProps }: AppProps) => {
+  return (
+    <ChakraProvider resetCSS={true}>
+      <Component {...pageProps} />
+    </ChakraProvider>
+  )
 }
 
-export default MyApp
+export default Memonium
