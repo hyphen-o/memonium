@@ -8,10 +8,6 @@ import { ModalClear } from "@/components/modal"
 export const Editor = () => {
   const { localText, setText, clearText } = useStorage()
 
-  const handleTextChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setText(e.target.value)
-  }
-
   return (
     <>
       <StatLength length={localText.length} />
@@ -25,7 +21,7 @@ export const Editor = () => {
         resize={"none"}
         transition={"height .2s"}
         value={localText}
-        onChange={handleTextChange}
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) => setText(e.target.value)}
       />
       <ModalClear handleModal={clearText} />
     </>
