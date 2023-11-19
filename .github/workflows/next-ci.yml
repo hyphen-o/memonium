@@ -13,11 +13,6 @@ jobs:
         node-version: [18.14.0]
     steps:
       - uses: actions/checkout@v3
-      - name: cd
-        run:
-          pwd 
-          cd app
-          ls
       - name: Install dependencies
         run: yarn install
       - name: lint-check
