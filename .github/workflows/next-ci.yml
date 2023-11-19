@@ -13,10 +13,9 @@ jobs:
         node-version: [18.14.0]
     steps:
       - uses: actions/checkout@v3
-      - working-directory: ./app
       - name: Install dependencies
+        working-directory: ./app
         run: yarn install
-      - name: lint-check
-        run: yarn run lint
-      - name: prettier-check
-        run: yarn run format
+      - name: check
+        working-directory: ./app
+        run: yarn check
