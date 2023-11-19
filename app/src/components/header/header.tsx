@@ -8,7 +8,9 @@ export const Header = () => {
   return (
     <Flex align={"center"} justify={"center"} py={"30px"}>
       <Heading>MEMONIUM</Heading>
-      <Text mr={"20px"} mt={"auto"}>v{VERSION}</Text>
+      <Text mr={"20px"} mt={"auto"}>
+        v{VERSION}
+      </Text>
       <Box onClick={toggleColorMode}>{colorMode == "dark" ? <SunIcon /> : <MoonIcon />}</Box>
     </Flex>
   )

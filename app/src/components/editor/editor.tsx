@@ -6,7 +6,7 @@ import ResizeTextArea from "react-textarea-autosize"
 import { ModalClear } from "@/components/modal"
 
 export const Editor = () => {
-  const {localText, setText, clearText} = useStorage()
+  const { localText, setText, clearText } = useStorage()
 
   const handleTextChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setText(e.target.value)
@@ -14,20 +14,20 @@ export const Editor = () => {
 
   return (
     <>
-      <StatLength length={localText.length}/>
-      <Textarea 
-      value={localText} 
-      onChange={handleTextChange} 
-      resize={"none"}
-      minH={"unset"}
-      placeholder={"text"} 
-      mt={"5px"}
-      minRows={10}
-      as={ResizeTextArea}
-      border={"solid 2px gray"}
-      transition={"height .2s"}
+      <StatLength length={localText.length} />
+      <Textarea
+        as={ResizeTextArea}
+        border={"solid 2px gray"}
+        minH={"unset"}
+        minRows={10}
+        mt={"5px"}
+        placeholder={"text"}
+        resize={"none"}
+        transition={"height .2s"}
+        value={localText}
+        onChange={handleTextChange}
       />
-      <ModalClear handleModal={clearText}/>
+      <ModalClear handleModal={clearText} />
     </>
   )
 }
