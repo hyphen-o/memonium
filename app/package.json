@@ -2,7 +2,9 @@
   "name": "works",
   "scripts": {
     "dev": "next dev",
-    "lint": "next lint",
+    "check:eslint": "next lint",
+    "eslint": "next lint --fix",
+    "check:prettier": "prettier --check './**/*.{js,jsx,ts,tsx,json}'",
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json}'",
     "check": "yarn check:eslint && yarn check:prettier"
   },

@@ -8,5 +8,13 @@
       "project": "./tsconfig.json",
       "sourceType": "module"
     },
+    "rules": {
+        "react/jsx-sort-props": [
+            "warn",
+            {
+              "callbacksLast": true
+            }
+          ],
+    },
     "extends": ["next/core-web-vitals", "eslint:recommended", "prettier"]
 }
