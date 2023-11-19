@@ -1,0 +1,22 @@
+name: next-ci
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  check-format:
+    runs-on:
+      ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.14.0]
+      steps:
+        uses: actions/checkout@v3
+        run: cd app
+        - name: Install dependencies
+            run: yarn install
+        - name: lint-check
+            run: yarn run lint
+        - name: prettier-check
+            run: yarn run format
