@@ -21,7 +21,7 @@ export const Editor = () => {
         resize={"none"}
         transition={"height .2s"}
         value={localText}
-        onChange={(e: React.ChangeEvent<HTMLInputElement>) => setText(e.target.value)}
+        onChange={(e: React.ChangeEvent<HTMLTextAreaElement>): void => setText(e.target.value)}
       />
       <ModalClear handleModal={clearText} />
     </>
