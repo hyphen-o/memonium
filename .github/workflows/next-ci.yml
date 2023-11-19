@@ -11,13 +11,13 @@ jobs:
     strategy:
       matrix:
         node-version: [18.14.0]
-      steps:
-        uses: actions/checkout@v3
-        - name: cd
-            run: cd app
-        - name: Install dependencies
-            run: yarn install
-        - name: lint-check
-            run: yarn run lint
-        - name: prettier-check
-            run: yarn run format
+    steps:
+      uses: actions/checkout@v3
+      - name: cd
+          run: cd app
+      - name: Install dependencies
+          run: yarn install
+      - name: lint-check
+          run: yarn run lint
+      - name: prettier-check
+          run: yarn run format
