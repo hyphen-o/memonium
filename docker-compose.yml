@@ -1,4 +1,6 @@
 version: '3.9'
+volumes:
+  unplugged:
 services:
   memonium:
     build:
@@ -9,3 +11,4 @@ services:
       - 3000:3000
     volumes:
       - ./app:/works
+      - unplugged:/works/.yarn/unplugged
