@@ -15,6 +15,7 @@
 
 .DS_STORE
 .next
+.vscode
 node_modules
 cert
 

@@ -18,7 +18,7 @@ export const ModalClear = ({ handleModal }: ModalClearProps) => {
 
   return (
     <>
-      <Button bg={"red.500"} mt={"5px"} onClick={onOpen}>
+      <Button bg={"red.500"} mt={"auto"} onClick={onOpen}>
         Clear
       </Button>
       <Modal isOpen={isOpen} onClose={onClose}>

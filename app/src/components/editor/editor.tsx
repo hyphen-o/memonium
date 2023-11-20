@@ -1,16 +1,19 @@
 import { StatLength } from "@/components/stat"
-import { useStorage } from "@/hooks/storage"
-import { Textarea } from "@chakra-ui/react"
+import { useLocalStorage } from "@/hooks/storage"
+import { Flex, Textarea } from "@chakra-ui/react"
 import React from "react"
 import ResizeTextArea from "react-textarea-autosize"
 import { ModalClear } from "@/components/modal"
 
 export const Editor = () => {
-  const { localText, setText, clearText } = useStorage()
+  const { storedValue, setText, clearText } = useLocalStorage()
 
   return (
     <>
-      <StatLength length={localText.length} />
+      <Flex>
+        <StatLength length={storedValue.length} />
+        <ModalClear handleModal={clearText} />
+      </Flex>
       <Textarea
         as={ResizeTextArea}
         border={"solid 2px gray"}
@@ -20,10 +23,9 @@ export const Editor = () => {
         placeholder={"text"}
         resize={"none"}
         transition={"height .2s"}
-        value={localText}
+        value={storedValue}
         onChange={(e: React.ChangeEvent<HTMLTextAreaElement>): void => setText(e.target.value)}
       />
-      <ModalClear handleModal={clearText} />
     </>
   )
 }
