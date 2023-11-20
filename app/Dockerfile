@@ -4,7 +4,6 @@ WORKDIR /works
 
 COPY . /works
 
-RUN yarn config set enableGlobalCache false
 RUN yarn install
 
 CMD ["yarn", "dev"]
