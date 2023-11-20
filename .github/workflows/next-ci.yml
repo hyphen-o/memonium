@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: unplug
         working-directory: ./app
-        run: yarn unplug prettier
+        run: sudo yarn unplug prettier
       - name: check
         working-directory: ./app
         run: yarn check
