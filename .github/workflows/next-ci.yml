@@ -13,9 +13,6 @@ jobs:
         node-version: [18.14.0]
     steps:
       - uses: actions/checkout@v3
-      - name: Install dependencies
-        working-directory: ./app
-        run: yarn install
       - name: check
         working-directory: ./app
         run: yarn check
