@@ -10,7 +10,7 @@
     "format": "prettier --write --ignore-path .gitignore './**/*.{ts,tsx,json}'",
     "check": "yarn check:eslint && yarn check:prettier"
   },
-  "packageManager": "yarn@4.0.2",
+  "packageManager": "yarn@3.4.1",
   "workspaces": [
     "/works/*"
   ],

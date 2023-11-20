@@ -4,6 +4,4 @@ WORKDIR /works
 
 COPY . /works
 
-RUN yarn install
-
 CMD ["yarn", "dev"]
