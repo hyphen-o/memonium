@@ -1,6 +1,4 @@
 version: '3.9'
-volumes:
-  next:
 services:
   memonium:
     build:
@@ -11,4 +9,3 @@ services:
       - 3000:3000
     volumes:
       - ./app:/works
-      - next:/works/.next
