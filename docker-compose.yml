@@ -1,4 +1,6 @@
 version: '3.9'
+volumes:
+  node_modules:
 services:
   memonium:
     build:
@@ -9,3 +11,4 @@ services:
       - 3000:3000
     volumes:
       - ./app:/works
+      - node_modules:/works/node_modules

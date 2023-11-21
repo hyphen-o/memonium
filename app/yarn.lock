@@ -1781,6 +1781,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/sanitize-html@npm:^2.9.5":
+  version: 2.9.5
+  resolution: "@types/sanitize-html@npm:2.9.5"
+  dependencies:
+    htmlparser2: "npm:^8.0.0"
+  checksum: 0634d917ef8ed1c7ee33fb544889259600d6211723210a253b85bda0618cf53f77e460c49b511520fa9e8c76bbafa8869d9638f014fec6f4a81a2e7c2e735517
+  languageName: node
+  linkType: hard
+
 "@types/scheduler@npm:*":
   version: 0.16.6
   resolution: "@types/scheduler@npm:0.16.6"
@@ -5649,6 +5658,7 @@ __metadata:
     "@types/eslint": "npm:^8"
     "@types/node": "npm:^20.9.2"
     "@types/react": "npm:^18.2.37"
+    "@types/sanitize-html": "npm:^2.9.5"
     "@typescript-eslint/eslint-plugin": "npm:^6.11.0"
     "@typescript-eslint/parser": "npm:^6.11.0"
     eslint: "npm:^8.54.0"
