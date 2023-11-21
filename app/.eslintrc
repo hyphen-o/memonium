@@ -16,5 +16,10 @@
             }
           ],
     },
-    "extends": ["plugin:@typescript-eslint/recommended", "next/core-web-vitals", "eslint:recommended", "prettier"]
+    "extends": [
+      "plugin:@typescript-eslint/recommended", 
+      "next/core-web-vitals", 
+      "eslint:recommended", 
+      "prettier"
+    ]
 }

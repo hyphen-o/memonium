@@ -5,12 +5,12 @@
     "start": "next start",
     "build": "next build",
     "check:eslint": "next lint",
-    "eslint": "next lint --fix",
+    "eslint": "next lint --dir src --fix",
     "check:prettier": "prettier --check './**/*.{js,jsx,ts,tsx,json}'",
     "format": "prettier --write --ignore-path .gitignore './**/*.{ts,tsx,json}'",
     "check": "yarn check:eslint && yarn check:prettier"
   },
-  "packageManager": "yarn@3.4.1",
+  "packageManager": "yarn@4.0.0",
   "workspaces": [
     "/works/*"
   ],
