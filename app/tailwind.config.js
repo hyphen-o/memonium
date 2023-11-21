@@ -1,4 +1,4 @@
-x/** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   theme: {
     // ...
