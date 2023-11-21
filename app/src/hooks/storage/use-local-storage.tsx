@@ -14,7 +14,7 @@ const LocalStorageContext = createContext<LocalStorageContextProps>({
   storedValue: "",
   setText: () => {},
   clearText: () => {},
-});
+})
 
 export const LocalStorageProvider = ({ children }: LocalStorageProviderProps) => {
   const [storedValue, setStoredValue] = useState<string>("")
