@@ -11,9 +11,6 @@
     "check": "yarn check:eslint && yarn check:prettier"
   },
   "packageManager": "yarn@4.0.0",
-  "workspaces": [
-    "/works/*"
-  ],
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
     "@chakra-ui/next-js": "^2.2.0",
