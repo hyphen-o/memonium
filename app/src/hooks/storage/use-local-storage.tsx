@@ -4,7 +4,17 @@ type LocalStorageProviderProps = {
   children?: React.ReactNode
 }
 
-const LocalStorageContext = createContext(undefined)
+type LocalStorageContextProps = {
+  storedValue: string
+  setText: (currentText: string) => void
+  clearText: () => void
+}
+
+const LocalStorageContext = createContext<LocalStorageContextProps>({
+  storedValue: "",
+  setText: () => {},
+  clearText: () => {},
+});
 
 export const LocalStorageProvider = ({ children }: LocalStorageProviderProps) => {
   const [storedValue, setStoredValue] = useState<string>("")
