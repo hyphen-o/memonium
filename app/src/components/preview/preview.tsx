@@ -5,6 +5,7 @@ import { parseMarkedHtml } from "@/utils"
 export const Preview = () => {
   const { storedValue } = useLocalStorage()
   const html = parseMarkedHtml(storedValue)
+
   return (
     <>
       <Heading fontSize={"24px"} my={"20px"}>

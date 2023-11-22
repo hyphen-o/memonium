@@ -4,7 +4,6 @@ WORKDIR /works
 
 COPY ./.yarnrc.yml ./package.json ./yarn.lock ./
 
-RUN cat package.json
 RUN corepack enable
 RUN yarn install
 
