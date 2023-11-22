@@ -1,7 +1,6 @@
 init:
 	@docker compose build --no-cache
 	@docker compose up
-	@docker cp front:/works/node_modules/ ./app/
 up:
 	@docker compose up
 down:
