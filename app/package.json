@@ -8,7 +8,7 @@
     "lint:fix": "next lint --dir src --fix",
     "format:check": "prettier --check './**/*.{js,jsx,ts,tsx,json}'",
     "format": "prettier --write --ignore-path .gitignore './**/*.{ts,tsx,json}'",
-    "check": "yarn lint:check && yarn check:prettier"
+    "check": "yarn lint:check && yarn format:check"
   },
   "packageManager": "yarn@4.0.0",
   "dependencies": {
