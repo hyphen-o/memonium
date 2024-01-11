@@ -6,5 +6,5 @@ type ContainerAppProps = {
 }
 
 export const ContainerApp = ({ children }: ContainerAppProps) => {
-  return <Container>{children}</Container>
+  return <Container maxWidth={"80vw"}>{children}</Container>
 }
