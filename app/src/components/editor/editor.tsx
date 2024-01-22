@@ -16,7 +16,11 @@ export const Editor = () => {
       </Flex>
       <Textarea
         as={ResizeTextArea}
-        border={"solid 2px gray"}
+        border={"none"}
+        borderTop={"solid 2px gray"}
+        borderBottom={"solid 2px gray"}
+        borderRadius={0}
+        outline={"none"}
         minH={"unset"}
         minRows={10}
         mt={"5px"}
@@ -25,6 +29,11 @@ export const Editor = () => {
         transition={"height .2s"}
         value={storedValue}
         onChange={(e: React.ChangeEvent<HTMLTextAreaElement>): void => setText(e.target.value)}
+        _focusVisible={{
+          border: "none",
+          borderTop: "solid 2px gray",
+          borderBottom: "solid 2px gray",
+        }}
       />
     </>
   )
