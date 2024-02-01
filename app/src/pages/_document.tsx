@@ -5,8 +5,10 @@ import { theme } from "@/theme"
 export default class Document extends NextDocument {
   render() {
     return (
-      <Html lang='en'>
-        <Head />
+      <Html lang='ja'>
+        <Head>
+          <title>MEMONIUM v1.1</title>
+        </Head>
         <body>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />
