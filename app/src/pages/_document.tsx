@@ -5,7 +5,7 @@ import { theme } from "@/theme"
 export default class Document extends NextDocument {
   render() {
     return (
-      <Html lang='ja'>
+      <Html lang='en'>
         <Head>
           <title>MEMONIUM v1.1</title>
         </Head>
