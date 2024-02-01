@@ -4,6 +4,7 @@ import { Flex, Textarea } from "@chakra-ui/react"
 import React from "react"
 import ResizeTextArea from "react-textarea-autosize"
 import { ModalClear } from "@/components/modal"
+import { countGrapheme } from "@/utils"
 
 export const Editor = () => {
   const { storedValue, setText, clearText } = useLocalStorage()
@@ -11,7 +12,7 @@ export const Editor = () => {
   return (
     <>
       <Flex>
-        <StatLength length={storedValue.length} />
+        <StatLength length={countGrapheme(storedValue)} />
         <ModalClear handleModal={clearText} />
       </Flex>
       <Textarea
