@@ -11,7 +11,7 @@ export const Header = () => {
       <Text mr={"20px"} mt={"auto"}>
         v{VERSION}
       </Text>
-      <Box onClick={toggleColorMode} cursor={"pointer"}>
+      <Box cursor={"pointer"} onClick={toggleColorMode}>
         {colorMode == "dark" ? <SunIcon /> : <MoonIcon />}
       </Box>
     </Flex>

@@ -1,7 +1,7 @@
 import { ContainerApp } from "@/components/container"
+import { DrawerPreview } from "@/components/drawer"
 import { Editor } from "@/components/editor"
 import { Header } from "@/components/header"
-import { Preview } from "@/components/preview"
 
 const Index = () => {
   return (
@@ -9,7 +9,7 @@ const Index = () => {
       <ContainerApp>
         <Header />
         <Editor />
-        <Preview />
+        <DrawerPreview />
       </ContainerApp>
     </>
   )
